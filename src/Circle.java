@@ -3,9 +3,9 @@ import java.awt.*;
 public class Circle extends Figure {
     private float radius;
 
-    public Circle(double x1, double y1,  float r) {
-        super(x1, y1);
-        this.radius = r;
+    public Circle(float radius) {
+        super(0, 0);
+        this.radius = (float) radius;
     }
 
     @Override
@@ -15,6 +15,6 @@ public class Circle extends Figure {
 
     @Override
     public double calculatePerimeter() {
-        return Math.PI * radius * 2;
+        return Math.PI * this.radius * 2;
     }
 }
